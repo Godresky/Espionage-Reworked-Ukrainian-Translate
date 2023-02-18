@@ -1,0 +1,2384 @@
+
+guiTypes = {
+containerWindowType = {
+		name = "local_spy_menu_container"
+		position = {x=300 y=150}
+		size = { width=1500 height=800 }
+		
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_trait_tree_bg"
+		}
+
+		instantTextboxType = {
+			name = "GetCountryName "
+			position = {x=19 y=15}
+			font = "hoi_36header"
+			text = ""
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+			
+		buttonType = {
+			name = "local_spy_menu_exit" 
+			position = {x=1297 y=10}	
+			spriteType = "GFX_closebutton"
+		}
+		
+
+		
+		instantTextboxType = {
+			name = "Agency Director"
+			position = {x=1010 y=110}
+			font = "hoi_36header"
+			text = "Очільник агентства"
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "Spy Agency Headquarters"
+			position = {x=15 y=12}
+			font = "hoi_36header"
+			text = "Голпровід шпигунського агентства"
+			maxWidth = 500
+			maxHeight = 23
+			format = left
+		}
+		
+			instantTextboxType = {
+			name = "Missions"
+			position = {x=300 y=112}
+			font = "hoi_36header"
+			text = "Призначте шпигунів для місцевих місій нижче: "
+			maxWidth = 600
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Portrait" 
+			position = {x=1050 y=150}	
+			spriteType = "GFX_Spy_Leader"
+		}
+		
+		
+		iconType ={
+			name ="spy_xp_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=1250 y = 65 }
+			pdx_tooltip = "SPY_XP_TOOLTIP"
+		}
+		
+		iconType = {
+			name ="spy_xp_icon"
+			spriteType = "GFX_spy_xp"
+			position = { x= 1300 y = 70 }
+		}
+		
+		instantTextboxType = {
+			name = "Spy XP"
+			position = {x=1258 y=66}
+			font = "hoi_20b"
+			text = "[?spy_xp]"
+			maxWidth = 40
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "SPY_XP_TOOLTIP"
+		}
+	
+		
+		iconType ={
+			name ="spy_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=565 y=175 }
+		}
+		
+		iconType = {
+			name ="spy_icon"
+			spriteType = "GFX_spy"
+			position = { x= 610 y = 176 }
+		}
+		
+		buttonType = {
+			name = "Training_Button" 
+			position = {x=300 y=170}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "TRAINING_PROGRAMS_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Training_Button_Active" 
+			position = {x=300 y=170}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "TRAINING_PROGRAMS_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Increase_Training" 
+			position = {x=530 y=172}	
+			spriteType = "GFX_naval_increase_amount"
+		}
+		
+		instantTextboxType = {
+			name = "Training Spies"
+			position = {x=555 y=176}
+			font = "hoi_20b"
+			text = "[?training_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Training Efficiency"
+			position = {x=660 y=176}
+			font = "hoi_20b"
+			text = "[Training_Efficiency]"
+			maxWidth = 150
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Decrease_Training" 
+			position = {x=498 y=172}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+			instantTextboxType = {
+			name = "Training"
+			position = {x=300 y=178}
+			font = "hoi_20b"
+			text = "Навчальні програми"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "TRAINING_PROGRAMS_TOOLTIP"
+		}
+		
+		
+		iconType ={
+			name ="war_propaganda_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=564 y=230 }
+		}
+		
+		iconType = {
+			name ="war_propaganda_icon"
+			spriteType = "GFX_spy"
+			position = { x= 610 y = 231 }
+		}
+		
+		buttonType = {
+			name = "War_Propaganda_Button" 
+			position = {x=300 y=224}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "WAR_PROPAGANDA_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "War_Propaganda_Button_Active" 
+			position = {x=300 y=224}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "WAR_PROPAGANDA_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Increase_War_Propaganda" 
+			position = {x=530 y=226}	
+			spriteType = "GFX_naval_increase_amount"
+		}
+		
+		instantTextboxType = {
+			name = "War Propaganda Spies"
+			position = {x=555 y=231}
+			font = "hoi_20b"
+			text = "[?war_propaganda_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "War Propaganda Weekly"
+			position = {x=660 y=230}
+			font = "hoi_20b"
+			text = "[War_Propaganda_Weekly]"
+			maxWidth = 250
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Decrease_War_Propaganda" 
+			position = {x=498 y=226}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+			instantTextboxType = {
+			name = "War Propaganda"
+			position = {x=300 y=232}
+			font = "hoi_20b"
+			text = "Пропаґанда війни"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "WAR_PROPAGANDA_TOOLTIP"
+		}
+		
+		iconType ={
+			name ="research_aid_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=564 y=285 }
+		}
+		
+		iconType = {
+			name ="research_aid_icon"
+			spriteType = "GFX_spy"
+			position = { x= 610 y = 286 }
+		}
+		
+		buttonType = {
+			name = "Research_Aid_Button" 
+			position = {x=300 y=279}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "RESEARCH_AID_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Research_Aid_Button_Active" 
+			position = {x=300 y=279}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "RESEARCH_AID_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Increase_Research_Aid" 
+			position = {x=530 y=281}	
+			spriteType = "GFX_naval_increase_amount"
+		}
+		
+		instantTextboxType = {
+			name = "Research Aid Spies"
+			position = {x=555 y=286}
+			font = "hoi_20b"
+			text = "[?research_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Research Bonus"
+			position = {x=660 y=285}
+			font = "hoi_20b"
+			text = "[Research_Bonus]"
+			maxWidth = 250
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Decrease_Research_Aid" 
+			position = {x=498 y=281}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+			instantTextboxType = {
+			name = "Research Aid"
+			position = {x=300 y=287}
+			font = "hoi_20b"
+			text = "Допомога в дослідженнях"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "RESEARCH_AID_TOOLTIP"
+		}
+		
+		
+		iconType ={
+			name ="suppress_resistance_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=564 y=340 }
+		}
+		
+		iconType = {
+			name ="suppress_resistance_icon"
+			spriteType = "GFX_spy"
+			position = { x= 610 y = 341 }
+		}
+		
+		buttonType = {
+			name = "Suppress_Resistance_Button" 
+			position = {x=300 y=334}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "SUPPRESS_RESISTANCE_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Suppress_Resistance_Button_Active" 
+			position = {x=300 y=334}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "SUPPRESS_RESISTANCE_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Increase_suppress_resistance" 
+			position = {x=530 y=336}	
+			spriteType = "GFX_naval_increase_amount"
+		}
+		
+		instantTextboxType = {
+			name = "suppress resistance Spies"
+			position = {x=555 y=341}
+			font = "hoi_20b"
+			text = "[?resistance_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Resistance Growth"
+			position = {x=662 y=340}
+			font = "hoi_20b"
+			text = "[Suppress_Resistance]"
+			maxWidth = 250
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Decrease_suppress_resistance" 
+			position = {x=498 y=336}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+			instantTextboxType = {
+			name = "Suppress Resistance"
+			position = {x=300 y=342}
+			font = "hoi_20b"
+			text = "Придушити супротив"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "SUPPRESS_RESISTANCE_TOOLTIP"
+		}
+		
+		iconType ={
+			name ="Freiwillige_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=564 y=395 }
+		}
+		
+		iconType = {
+			name ="Freiwillige_icon"
+			spriteType = "GFX_spy"
+			position = { x= 610 y = 396 }
+		}
+		
+		buttonType = {
+			name = "Freiwillige_Button" 
+			position = {x=300 y=389}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "FREIWILLIGE_PROGRAM_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Freiwillige_Button_Active" 
+			position = {x=300 y=389}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "FREIWILLIGE_PROGRAM_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Increase_Freiwillige" 
+			position = {x=530 y=391}	
+			spriteType = "GFX_naval_increase_amount"
+		}
+		
+		instantTextboxType = {
+			name = "Freiwillige Spies"
+			position = {x=555 y=396}
+			font = "hoi_20b"
+			text = "[?Freiwillige_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Non-core territories manpower"
+			position = {x=660 y=395}
+			font = "hoi_20b"
+			text = "[Freiwillige]"
+			maxWidth = 250
+			maxHeight = 23
+			format = left
+		}
+		
+		buttonType = {
+			name = "Decrease_Freiwillige" 
+			position = {x=498 y=391}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+		instantTextboxType = {
+			name = "Freiwillige"
+			position = {x=300 y=397}
+			font = "hoi_20b"
+			text = "Програма добровольців"
+			maxWidth = 200
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "FREIWILLIGE_PROGRAM_TOOLTIP"
+		}
+		
+		
+
+		
+		instantTextboxType = {
+			name = "Current Target"
+			position = {x=410 y=520}
+			font = "hoi_20b"
+			text = ""
+			maxWidth = 350
+			maxHeight = 23
+			format = center
+		}
+	
+	
+		
+	
+		
+		buttonType = {
+			name = "Fighter_Model" 
+			position = {x=310 y=540}	
+			spriteType = "GFX_fighter_model"
+			pdx_tooltip = "FIGHTER_TOOLTIP"
+		}
+		
+		iconType ={
+			name ="Fighter_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x=440 y=545 }
+		}
+		
+		instantTextboxType = {
+			name = "Fighter Progress"
+			position = {x=442 y=547}
+			font = "hoi_20b"
+			text = "Поступ: [?Fighter_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		iconType ={
+			name ="CAS_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x=440 y=620 }
+		}
+
+		instantTextboxType = {
+			name = "CAS Progress"
+			position = {x=442 y=622}
+			font = "hoi_20b"
+			text = "Поступ: [?CAS_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		iconType ={
+			name ="bomber_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x=440 y=700 }
+		}
+		
+		instantTextboxType = {
+			name = "Bomber Progress"
+			position = {x=442 y=702}
+			font = "hoi_20b"
+			text = "Поступ: [?strategic_bomber_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		iconType ={
+			name ="light_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x=750 y=545 }
+		}
+		
+		instantTextboxType = {
+			name = "Light Progress"
+			position = {x=752 y=547}
+			font = "hoi_20b"
+			text = "Поступ: [?light_armor_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		iconType ={
+			name ="medium_bg"
+			spriteType = "GFX_cloning_progress_bg"
+			position = { x=750 y=620 }
+		}
+		
+		instantTextboxType = {
+			name = "Medium Progress"
+			position = {x=752 y=622}
+			font = "hoi_20b"
+			text = "Поступ: [?medium_armor_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		iconType ={
+			name ="heavy_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x=750 y=700 }
+		}
+		
+		instantTextboxType = {
+			name = "Heavy Progress"
+			position = {x=752 y=702}
+			font = "hoi_20b"
+			text = "Поступ: [?heavy_armor_cloning_progress]%"
+			maxWidth = 120
+			maxHeight = 23
+			format = center
+		}
+		
+		buttonType = {
+			name = "Strategic_Bomber_Model" 
+			position = {x=300 y=695}	
+			spriteType = "GFX_strategic_bomber_model"
+			pdx_tooltip = "STRATEGIC_BOMBER_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Heavy_Armor_Model" 
+			position = {x=595 y=692}	
+			spriteType = "GFX_heavy_armor_model"
+			pdx_tooltip = "HEAVY_ARMOR_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Medium_Armor_Model" 
+			position = {x=600 y=610}	
+			spriteType = "GFX_armor_model"
+			pdx_tooltip = "MEDIUM_ARMOR_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Light_Armor_Model" 
+			position = {x=605 y=540}	
+			spriteType = "GFX_light_armor_model"
+			pdx_tooltip = "LIGHT_ARMOR_TOOLTIP"
+		}
+
+		
+		buttonType = {
+			name = "CAS_Model" 
+			position = {x=295 y=610}	
+			spriteType = "GFX_cas_model"
+			pdx_tooltip = "CAS_TOOLTIP"
+		}
+		
+		iconType = {
+			name ="Model Progress"
+			spriteType = "GFX_model_progress"
+			position = { x= 282 y = 460 }
+		}
+		
+		
+		iconType = {
+			name ="menu line"
+			spriteType = "GFX_menu_line"
+			position = { x= 1112 y = 410 }
+		}
+		
+		instantTextboxType = {
+			name = "Unit Recreation Laboratory"
+			position = {x=275 y=460}
+			font = "hoi_36header"
+			text = "Вивчення технологій ворожих дивізій"
+			maxWidth = 500
+			maxHeight = 23
+			format = center
+		}
+		
+		
+		
+		iconType ={
+			name ="laboratory_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=845 y=465 }
+		}
+		
+
+		
+		iconType = {
+			name ="Laboratory_icon"
+			spriteType = "GFX_spy"
+			position = { x= 890 y =465 }
+		}
+		
+		
+		buttonType = {
+			name = "Increase_Laboratory" 
+			position = {x=808 y=462}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "STUDY_TECHNOLOGY_SPIES_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "Decrease_Laboratory" 
+			position = {x=775 y=462}	
+			spriteType = "GFX_naval_decrease_amount"
+		}
+		
+		instantTextboxType = {
+			name = "Laboratory Spies"
+			position = {x = 835 y = 467}
+			font = "hoi_20b"
+			text = "[?laboratory_spies]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "STUDY_TECHNOLOGY_SPIES_TOOLTIP"
+		}
+		
+		
+		iconType ={
+			name ="research_points_bg"
+			spriteType = "GFX_generic_box_96"
+			position = { x=821 y=500 }
+		}
+		
+		iconType = {
+			name ="Research_Points_icon"
+			spriteType = "GFX_research_points"
+			position = { x= 888 y =502 }
+		}
+		
+		instantTextboxType = {
+			name = "Laboratory Research Points"
+			position = {x=829 y=502}
+			font = "hoi_20b"
+			text = "[?research_points]"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+			pdx_tooltip = "RESEARCH_POINTS_TOOLTIP"
+		}
+		
+		
+		iconType = {
+			name ="menu line2"
+			spriteType = "GFX_menu_line"
+			position = { x= 1112 y = 480 }
+		}
+		
+		iconType = {
+			name ="menu line3"
+			spriteType = "GFX_menu_line"
+			position = { x= 1010 y = 580 }
+		}
+		
+		iconType = {
+			name ="menu line4"
+			spriteType = "GFX_menu_line"
+			position = { x= 1185 y = 580 }
+		}
+		
+		
+		
+		buttonType = {
+			name = "level_1" 
+			position = {x=1035 y=390}	
+			spriteType = "GFX_level_button"
+		}
+		
+		buttonType = {
+			name = "level_1_active" 
+			position = {x=1035 y=390}	
+			spriteType = "GFX_level_button_blue"
+		}
+		
+		
+		
+		
+		instantTextboxType = {
+			name = "Level 1"
+			position = {x=1100 y=397}
+			font = "hoi_20b"
+			text = "Рівень 1"
+			maxWidth = 70
+			maxHeight = 23
+			format = center
+		}
+		
+		buttonType = {
+			name = "level_button2" 
+			position = {x=1035 y=450}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "LEVEL_2_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "level_button2_active" 
+			position = {x=1035 y=450}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "LEVEL_2_TOOLTIP"
+		}
+		
+		instantTextboxType = {
+			name = "Level 2"
+			position = {x=1100 y=457}
+			font = "hoi_20b"
+			text = "Рівень 2"
+			maxWidth = 70
+			maxHeight = 23
+			format = center 
+			pdx_tooltip = "LEVEL_2_TOOLTIP"
+		}
+		
+		buttonType = {
+			name = "level_button3" 
+			position = {x=1035 y=510}	
+			spriteType = "GFX_level_button"
+			pdx_tooltip = "LEVEL_3_TOOLTIP"
+		}
+		buttonType = {
+			name = "level_button3_active" 
+			position = {x=1035 y=510}	
+			spriteType = "GFX_level_button_blue"
+			pdx_tooltip = "LEVEL_3_TOOLTIP"
+		}
+		
+		instantTextboxType = {
+			name = "Level 3"
+			position = {x=1100 y=517}
+			font = "hoi_20b"
+			text = "Рівень 3"
+			maxWidth = 70
+			maxHeight = 23
+			format = center 
+			pdx_tooltip = "LEVEL_3_TOOLTIP"
+		}
+		
+		
+		iconType = {
+			name ="Ability BG"
+			spriteType = "GFX_bg_button"
+			position = { x= 950 y =570 }
+		}
+		
+		instantTextboxType = {
+			name = "Director Ability"
+			position = {x=960 y=575}
+			font = "hoi_20b"
+			text = "Визначте пріорітет для очільника агентства: "
+			maxWidth = 350
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Encryption"
+			position = {x=968 y=700}
+			font = "hoi_20b"
+			text = "Зашифрування"
+			maxWidth = 150
+			maxHeight = 23
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Decryption"
+			position = {x=1140 y=700}
+			font = "hoi_20b"
+			text = "Розшифрування"
+			maxWidth = 150
+			maxHeight = 23
+			format = center
+		}
+		
+
+		
+		buttonType = {
+			name = "Spy_Encryption" 
+			position = {x=1010 y=630}	
+			spriteType = "GFX_spy_encryption"
+		}
+		
+			buttonType = {
+			name = "Spy_Decryption" 
+			position = {x=1180 y=630}	
+			spriteType = "GFX_spy_decryption"
+		}
+		
+		
+			instantTextboxType = {
+			name = "Currently Infiltrating"
+			position = {x=50 y=82}
+			font = "hoi4_typewriter16"
+			maxWidth = 210
+			format = left
+			text = "Наразі ми проникаємо у: "
+		}
+		
+		instantTextboxType = {
+			name = "Monitored Country"
+			position = {x=0 y=112}
+			font = "hoi_36header"
+			maxWidth = 285
+			format = center
+			text = "[?spy_target.GetName]" 
+		}
+		
+		
+		    iconType = {
+			name = "seperator"
+			position = { x = 10 y = 186 }
+			spriteType ="GFX_trait_separator"
+				}
+		
+		instantTextboxType = {
+			name = "Industry Data"
+			position = {x=80 y=177}
+			font = "hoi_20b"
+			text_color_code = b
+			maxWidth = 210
+			format = left
+			text = "Промислові данні"
+		}
+		
+		
+		instantTextboxType = {
+			name = "Civilian Factories"
+			position = {x=30 y=220}
+			font = "hoi4_typewriter16"
+			maxWidth = 210
+			format = left
+			text = "Цивільні заводи: [?target_num_of_civilian_factories] "
+		}
+		
+		instantTextboxType = {
+			name = "Military Factories"
+			position = {x=30 y=250}
+			font = "hoi4_typewriter16"
+			maxWidth = 210
+			format = left
+			text = "Військові заводи: [?target_num_of_military_factories] "
+		}
+		
+			instantTextboxType = {
+			name = "Naval Dockyards"
+			position = {x=30 y=280}
+			font = "hoi4_typewriter16"
+			maxWidth = 210
+			format = left
+			text = "Верфі: [?target_num_of_naval_factories] "
+		}
+		 
+		  iconType = {
+			name = "seperator2"
+			position = { x = 10 y = 320 }
+			spriteType ="GFX_trait_separator" 
+				}
+				
+		instantTextboxType = {
+			name = "Military Data"
+			position = {x=90 y=311}
+			font = "hoi_20b"
+			text_color_code = b
+			maxWidth = 210
+			format = left
+			text = "Військові данні"
+		}
+	
+	    instantTextboxType = { 
+			name = "Manpower available"
+			position = {x=30 y=350}
+			font = "hoi4_typewriter16"
+			maxWidth = 210
+			format = left
+			text = "Доступний людський ресурс: [?target_manpower_k]т"
+		} 
+		
+		  instantTextboxType = {
+			name = "Manpower Currently in Deployment Queue"
+			position = {x=30 y=380}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Людський ресурс у черзі на розміщення:  [?target_amount_manpower_in_deployment_queue] "
+		}
+	    
+		  instantTextboxType = {
+			name = "Number of Divisions"
+			position = {x=30 y=420}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Кількість дивізій:  [?target_num_divisions] "
+		}
+		
+		 instantTextboxType = {
+			name = "Number of Nuclear Warheads"
+			position = {x=30 y=450}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Кількість ядерних боєголовок:  [?target_num_of_nukes] "
+		}
+		
+		instantTextboxType = {
+			name = "Land Doctrine Research Level"
+			position = {x=30 y=480}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Рівень наземної доктрини:  [?target_land_doctrine_level] "
+		}
+	    		
+		instantTextboxType = {
+			name = "Light Tanks"
+			position = {x=30 y=510}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Легкоброньовані: [?target_light_armor] дивізія(-ій)"
+		}
+		
+		instantTextboxType = {
+			name = "Medium Tanks"
+			position = {x=30 y=540}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Середньоброньовані: [?target_medium_armor] дивізія(-ій)"
+		}
+		
+		instantTextboxType = {
+			name = "Heavy Tanks"
+			position = {x=30 y=570}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Важкоброньовані: [?target_heavy_armor] дивізія(-ій)"
+		}
+
+		instantTextboxType = {
+			name = "Carrier"
+			position = {x=30 y=600}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Авіяносці: [?target_carrier]"
+		}
+		instantTextboxType = {
+			name = "CAS"
+			position = {x=30 y=630}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Лінкори: [?target_battleship]"
+		}
+		instantTextboxType = {
+			name = "Strategic Bomber"
+			position = {x=30 y=660}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Важкі крейсери: [?target_heavy_cruiser]"
+		}
+	    instantTextboxType = {
+			name = "Submarines"
+			position = {x=30 y=690}
+			font = "hoi4_typewriter16"
+			maxWidth = 230
+			format = left
+			text = "Підводні човни: [?target_submarine]"
+		}
+		
+		
+		buttonType = {
+			name = "Cancel_Infiltration" 
+			position = {x=71 y=720}	
+			spriteType = "GFX_cancel_infiltration"
+			pdx_tooltip = "CANCEL_INFILTRATION_TOOLTIP"
+		}
+		
+		
+		instantTextboxType = {
+			name = "CancelInfiltration"
+			position = {x=77 y=728}
+			font = "hoi_18mbs"
+			maxWidth = 130
+			format = center
+			text = "Скасувати"
+			pdx_tooltip = "CANCEL_INFILTRATION_TOOLTIP"
+		}
+
+
+
+	}
+	containerWindowType = {
+		name = "spy_container"
+		position = { x = -478 y = 4 } #990
+		orientation = upper_right
+		
+		iconType ={
+			name ="spy_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="spy_icon"
+			spriteType = "GFX_spy"
+			position = { x= 3 y = 0 }
+		}
+		buttonType = {
+			name ="hq_icon"
+			spriteType = "GFX_in_stock_icon"
+			position = { x= 70 y = 1 }
+			pdx_tooltip = "HQ_TOOLTIP"
+		}
+
+		
+		instantTextBoxType = {
+			name ="spies_text"
+			position = { x= 17 y = 3 }
+			font = "hoi_18mbs"
+			text = "[?spies_display]"
+			format = center
+			maxWidth = 54
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "SPIES_TOOLTIP"
+		}
+	}
+	
+	containerWindowType = {
+		name = "spy_efficiency_container"
+		position = { x = -550 y = 4 } #990
+		orientation = upper_right
+		
+		iconType ={
+			name ="spy_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="shield"
+			spriteType = "GFX_shield"
+			position = { x= 3 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name ="shield_text"
+			position = { x= 22 y = 3 }
+			font = "hoi_18mbs"
+			text = "[?spy_efficiency]%"
+			format = center
+			maxWidth = 54
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "SPY_EFFICIENCY_TOOLTIP"
+		}
+	}
+	
+	containerWindowType = {
+		name = "Spy_Menu_container"
+		position = {x=450 y=110}
+		size = { width=200 height=100 }
+
+
+		moveable = no
+		
+		
+		buttonType = {
+			name = "Spy_Menu" 
+			position = {x=10 y=10}	
+			spriteType = "GFX_generic_spy_intel"
+			pdx_tooltip = "SPY_MENU_TOOLTIP"
+			scale = 1.1
+		}
+		
+		
+	
+	}
+	
+	containerWindowType = {
+		name = "Spy_Menu_window_container"
+		position = { x = 240 y = 110}
+		size = { width = 200 height=130 }
+		moveable = no
+		
+		
+		iconType = {
+			name = "Spy_Menu_Window_bg"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Spy_Menu_Window_bg"
+		}
+	
+			buttonType = {
+			name = "exitbutton" 
+			position = {x=5 y=5}	
+			spriteType = "GFX_closebutton"
+		}
+		
+		iconType ={
+			name ="prisoner_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=225 y = 51 }
+			pdx_tooltip = "SPY_XP_TOOLTIP"
+			scale = 0.9
+		}
+		
+		buttonType = {
+			name = "Negotiate_Release" 
+			position = {x=225 y=51}	
+			spriteType = "GFX_Prisoners" 
+			scale = 0.36
+		} 
+		
+		instantTextBoxType = {
+			name ="Captured Spies"
+			position = { x= 247 y = 52 }
+			font = "hoi_18mbs"
+			text = "[?PREV.Spies_Captured@ROOT]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "SPIES_CAPTURED"
+			
+			
+		}
+		
+		iconType ={
+			name ="assigned_spies_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=225 y = 18 }
+			pdx_tooltip = "SPY_XP_TOOLTIP"
+			scale = 0.9
+		}
+		
+		iconType = {
+			name = "assigned_spies" 
+			position = {x=229 y=20}	
+			spriteType = "GFX_spy"
+			pdx_tooltip = "INFILTRATE_TOOLTIP"
+			scale = 0.8
+		}
+		
+
+		
+		iconType ={
+			name ="spy_network_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=90 y = 18 }
+			pdx_tooltip = "SPY_XP_TOOLTIP"
+			scale = 0.9
+		}
+		
+		iconType = {
+			name = "spy_network" 
+			position = {x=93 y=17}	
+			spriteType = "GFX_network_strength"
+			pdx_tooltip = "NETWORK_STRENGTH_TOOLTIP"
+			scale = 0.8
+		}
+		
+		instantTextBoxType = {
+			name ="Network Strength"
+			position = { x= 110 y = 19 }
+			font = "hoi_18mbs"
+			text = "[?ROOT.network_strength@PREV]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "NETWORK_STRENGTH_TOOLTIP"
+			 
+			  
+		} 
+		  
+
+		
+		buttonType = {
+			name = "Increase_Network" 
+			position = {x=195 y=16}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "TARGETS_MAXED"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Decrease_Network" 
+			position = {x=169 y=16}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_NETWORK" 
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Negotiate_Release_Button" 
+			position = {x=150 y=42}	
+			spriteType = "GFX_Negotiate_Release_Button"
+			pdx_tooltip = "NEGOTIATE_RELEASE_TOOLTIP"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "Operation_Eiche_Button" 
+			position = {x=100 y=42}	
+			spriteType = "GFX_Operation_Eiche_Button"
+			pdx_tooltip = "OPERATION_EICHE_TOOLTIP"
+			scale = 0.7
+		}
+		
+
+
+		buttonType = {
+			name = "Counter_Espionage_Button_ongoing" 
+			position = {x=35 y=30}	
+			spriteType = "GFX_ongoing_counter_intelligence"
+			pdx_tooltip = "INFILTRATE_TOOLTIP"
+			scale = 0.5
+		} 
+		
+		buttonType = {
+			name = "Counter_Espionage_Button" 
+			position = {x=50 y=42}	
+			spriteType = "GFX_Counter_Espionage_Button"
+			pdx_tooltip = "Counter_Espionage_Non_Active"  
+			scale = 0.7
+		}
+		
+		buttonType = {
+			name = "Counter_Espionage_Button2" 
+			position = {x=50 y=42}	
+			spriteType = "GFX_Counter_Espionage_Button"
+			pdx_tooltip = "Counter_Espionage_Active"
+			scale = 0.7
+		}
+		
+
+		
+		buttonType = {
+			name = "Disrupt_Civilian" 
+			position = {x=10 y=85}	
+			spriteType = "GFX_Disrupt_Civilian"
+			pdx_tooltip = "DISRUPT_CIVILIAN_TOOLTIP"
+			scale = 0.8
+		}	
+		buttonType = {
+			name = "Disrupt_Military" 
+			position = {x=50 y=85}	
+			spriteType = "GFX_Disrupt_Military"
+			pdx_tooltip = "DISRUPT_MILITARY_TOOLTIP"
+			scale = 0.8 
+		}
+		
+			buttonType = {
+			name = "Sabotage_Production" 
+			position = {x=90 y=85}	
+			spriteType = "GFX_Sabotage_Production"
+			pdx_tooltip = "SABOTAGE_PRODUCTION_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Sabotage_Extraction" 
+			position = {x=130 y=85}	
+			spriteType = "GFX_Sabotage_Extraction"
+			pdx_tooltip = "SABOTAGE_EXTRACTION_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Sabotage_Recruitment" 
+			position = {x=170 y=85}	
+			spriteType = "GFX_Sabotage_Recruitment"
+			pdx_tooltip = "SABOTAGE_RECRUITMENT_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Sabotage_Planning" 
+			position = {x=210 y=85}	
+			spriteType = "GFX_Sabotage_Planning"
+			pdx_tooltip = "SABOTAGE_PLANNING_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Disrupt_Supply" 
+			position = {x=250 y=85}	
+			spriteType = "GFX_Disrupt_Supply"
+			pdx_tooltip = "DISRUPT_SUPPLY_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Jam_Radar" 
+			position = {x=10 y=125}	
+			spriteType = "GFX_Jam_Radar"
+			pdx_tooltip = "JAM_RADAR_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Poison_Food" 
+			position = {x=50 y=125}	
+			spriteType = "GFX_Poison_Food"
+			pdx_tooltip = "POISON_FOOD_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Support_Resistance" 
+			position = {x=90 y=125}	
+			spriteType = "GFX_Support_Resistance"
+			pdx_tooltip = "SUPPORT_RESISTANCE_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Support_Pacifists" 
+			position = {x=130 y=125}	
+			spriteType = "GFX_Support_Pacifists"
+			pdx_tooltip = "SUPPORT_PACIFISTS_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Sabotage_Research" 
+			position = {x=170 y=125}	
+			spriteType = "GFX_Sabotage_Research"
+			pdx_tooltip = "SABOTAGE_RESEARCH_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Sow_Discontent" 
+			position = {x=210 y=125}	
+			spriteType = "GFX_Sow_Political_Discontent"
+			pdx_tooltip = "POLITICAL_DISCONTENT_TOOLTIP"
+			scale = 0.8
+		}
+		buttonType = {
+			name = "Infiltrate" 
+			position = {x=250 y=125}	
+			spriteType = "GFX_Infiltrate"
+			pdx_tooltip = "INFILTRATE_TOOLTIP"
+			scale = 0.8
+		}
+		
+		instantTextBoxType = {
+			name ="Assigned Spies"
+			position = { x= 247 y = 19 }
+			font = "hoi_18mbs"
+			text = "[?ROOT.network_spies@PREV]"
+			format = center
+			maxWidth = 40
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "SPIES_ASSIGNED_TOOLTIP"
+			
+			
+		}
+
+		
+
+
+}
+  
+
+
+containerWindowType = {
+		name = "Mission_Confirmation_container"
+		position = { x = 700 y = 400 } #990
+	    size = { width=600 height=400 }
+		show_sound = diplomatic_notification
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = yes
+		
+		background = {
+			name = "mission_confirmation_bg"
+			spriteType = "GFX_mission_confirmation_bg"
+		}
+
+		
+	
+		iconType ={
+			name ="Mission_Chance_BG"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=270 y=168}
+			pdx_tooltip = "DEAL_FAVORABILITY_TOOLTIP"
+		}
+		
+		
+		instantTextBoxType = {
+			name ="Mission Chance"
+			position = { x= 255 y = 170}
+			font = "hoi_18mbs"
+			text = "[?ROOT.Success_Chance@ROOT.show_Mission_Confirmation]%"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			pdx_tooltip = "SUCCESS_CHANCE_TOOLTIP"
+		}
+		
+		instantTextBoxType = {
+			name ="Mission_Confirmation_Header"
+			position = { x= 18 y = 27 }
+			font = "hoi_36header"
+			text = "Затвердження пляну"
+			format = center
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+		}
+
+
+		
+		instantTextBoxType = {
+			name ="Mission_Confirmation_desc"
+			position = { x= 30 y = 100 }
+			font = "hoi_18mbs"
+			text = "Mission_Confirmation"
+			format = left
+			maxWidth = 340
+			maxHeight = 75
+			fixedsize = yes
+			
+			
+		}
+		
+		instantTextBoxType = {
+			name ="Mission_Confirmation_desc2"
+			position = { x= 30 y = 170 }
+			font = "hoi_18mbs"
+			text = "Базисний шанс на успіх операції:"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+			 
+		}
+		buttonType = {
+			name ="mission_confirmation_ok"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 260 y = 258}
+		}
+
+
+
+		instantTextBoxType = {
+			name ="Mission_ok"
+			position = { x= 280 y = 264 }
+			font = "hoi_18mbs"
+			text = "YES"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+
+		buttonType = {
+			name ="mission_confirmation_cancel"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 150 y = 258}
+		}
+
+
+
+		instantTextBoxType = {
+			name ="Mission_cancel"
+			position = { x= 170 y = 264 }
+			font = "hoi_18mbs"
+			text = "NO"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+
+
+		iconType = {
+			name = "Portrait_mission" 
+			position = {x=390 y=90}	
+			spriteType = "GFX_Spy_Leader"
+			scale = 0.7
+		}
+
+
+		
+
+		}
+		
+		
+		
+		containerWindowType = {
+		name = "Negotiate_Release_container"
+		position = { x = -200 y = -300 } #990
+	    size = { width=600 height=800 }
+
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = yes
+		orientation = center
+		
+		background = {
+			name = "Negotiate_Release_bg"
+			spriteType = "GFX_Letter_Espionage"
+		}
+		
+
+
+
+		
+		
+		instantTextBoxType = {
+			name ="Negotiate_Release_Header"
+			position = { x= 15 y = 27 }
+			font = "hoi_36header"
+			text = "Перемовини про звільнення"
+			format = center
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+		}
+		
+
+	
+		
+	    buttonType = {
+			name = "Increase_Spies_Released" 
+			position = {x=125 y=273}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+
+		}
+		
+		buttonType = {
+			name = "Decrease_Spies_Released" 
+			position = {x=103 y=273}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+		}
+		
+	    buttonType = {
+			name = "Increase_Spies_Released_Return" 
+			position = {x=65 y=336}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+		}
+		
+		buttonType = {
+			name = "Decrease_Spies_Released_Return" 
+			position = {x=43 y=336}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+		}
+		
+	    buttonType = {
+			name = "Increase_Equipment_Return" 
+			position = {x=65 y=368}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+		}
+		
+		buttonType = {
+			name = "Decrease_Equipment_Return" 
+			position = {x=43 y=368}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+			scale = 0.7
+			clicksound = assign_leader
+		}
+	
+		iconType = {
+			name = "Signature" 
+			position = {x=330 y=485 }	
+			spriteType = "GFX_Signature"
+			scale = 0.7
+		}
+		
+		
+		
+		
+		buttonType = {
+			name = "Letter_Send"
+			position = {x=150 y= 555}	
+			spriteType = "GFX_mission_confirmation_ok"
+			pdx_tooltip = "INFILTRATE_TOOLTIP"
+			scale = 1
+			clicksound = assign_leader
+		}
+		
+		buttonType = {
+			name = "Letter_Cancel"
+			position = {x=50 y= 555}	
+			spriteType = "GFX_mission_confirmation_ok"
+			pdx_tooltip = "INFILTRATE_TOOLTIP"
+			scale = 1
+		}
+		
+		instantTextBoxType = {
+			name ="Letter"
+			position = { x= 210 y = 560 }
+			font = "hoi_18mbs"
+			text = "Вигідність угоди:"
+			format = center
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		
+		
+
+		
+
+		
+
+		
+		instantTextBoxType = {
+			name ="Letter Send"
+			position = { x= 72 y = 560}
+			font = "hoi_18mbs"
+			text = "Відправити"
+			format = center
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="Cancel Letter"
+			position = { x= 62 y = 560}
+			font = "hoi_18mbs"
+			text = "Скасувати"
+			format = left
+			maxWidth = 80
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		iconType ={
+			name ="Letter_bg_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=420 y=557}
+			pdx_tooltip = "DEAL_FAVORABILITY_TOOLTIP"
+		}
+		
+		
+		instantTextBoxType = {
+			name ="Favorability Value"
+			position = { x= 405 y = 560 }
+			font = "hoi_18mbs"
+			text = "Deal_Favorability"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			pdx_tooltip = "DEAL_FAVORABILITY_TOOLTIP"
+		}
+		
+
+		instantTextBoxType = {
+			name ="Negotiate_Release_desc"
+			position = { x= 30 y = 90 }
+			font = "hoi_18mbs"
+			text = "Написати голові [?ROOT.show_Negotiate_Release.GetLeader] про звільнення шпигунів: "
+			format = left
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+		}
+		
+
+		
+		instantTextBoxType = {
+			name ="Intro"
+			position = { x= 40 y = 150 }
+			font = "hoi4_typewriter16"
+			text = "Дорогий [?ROOT.show_Negotiate_Release.GetLeader], голові держави [?ROOT.show_Negotiate_Release.GetName],"
+			format = left
+			maxWidth = 400
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+		}
+
+		
+		instantTextBoxType = {
+			name ="We write you"
+			position = { x= 40 y = 211}
+			font = "hoi4_typewriter16"
+			text = "Letter_Content"
+			format = left
+			maxWidth = 450
+			maxHeight = 300
+			fixedsize = yes
+			
+		}
+		instantTextBoxType = {
+			name ="Letter Header"
+			position = { x= 40 y = 180}
+			font = "hoi4_typewriter16"
+			text = "Letter_Header"
+			format = left
+			maxWidth = 450
+			maxHeight = 200
+			fixedsize = yes
+			
+		}
+		
+
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		containerWindowType = {
+		name = "Operation_Eiche_container"
+		position = { x = 700 y = 200} #990
+	    size = { width=600 height=800}
+		show_sound = diplomatic_notification
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = yes
+
+		
+		background = {
+			name = "Operation_Eiche_Bg"
+			spriteType = "GFX_Operation_Map_bg"
+		}
+
+		
+	
+
+		
+		instantTextBoxType = {
+			name ="Operation Eiche"
+			position = { x= 15 y = 27 }
+			font = "hoi_36header"
+			text = "Операція «Айхе»"
+			format = center
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+		}
+		
+		iconType = {
+			name = "Eiche_Convoy"
+			position = {x=340 y= 500}	
+			spriteType = "GFX_Eiche_Convoy"
+			scale = 0.6
+		}
+		
+		buttonType = {
+			name = "Increase_Convoy" 
+			position = {x=280 y=502}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_CONVOY_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Decrease_Convoy" 
+			position = {x=255 y=502}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_CONVOY_TOOLTIP"
+			scale = 0.8
+		}
+	
+		instantTextBoxType = {
+			name ="Convoy"
+			position = { x= 310 y = 505 }
+			font = "hoi4_typewriter16"
+			text = "[?ROOT.eiche_convoy@ROOT.show_Operation_Eiche]"
+			format = center
+			maxWidth = 25
+			maxHeight = 24
+			fixedsize = yes
+
+		}
+
+		
+		iconType = {
+			name = "Eiche_Transport"
+			position = {x=400 y= 140}	
+			spriteType = "GFX_Eiche_Transport"
+			scale = 0.7
+		}
+		
+		buttonType = {
+			name = "Increase_Transport" 
+			position = {x=340 y=145}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_TRANSPORT_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Decrease_Transport" 
+			position = {x=315 y=145}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_TRANSPORT_TOOLTIP"
+			scale = 0.8
+		}
+	
+		instantTextBoxType = {
+			name ="Transport"
+			position = { x= 372 y = 148 }
+			font = "hoi4_typewriter16"
+			text = "[?ROOT.eiche_transport@ROOT.show_Operation_Eiche]"
+			format = center
+			maxWidth = 25
+			maxHeight = 24
+			fixedsize = yes
+		}
+	
+		iconType = {
+			name = "Eiche_Marines_Icon"
+			position = {x=265 y= 140}	
+			spriteType = "GFX_Eiche_Marines_Icon"
+			scale = 0.8
+		}
+		
+        instantTextBoxType = {
+			name ="Marines"
+			position = { x= 242 y = 148 }
+			font = "hoi4_typewriter16"
+			text = "[?ROOT.marines_eiche@ROOT.show_Operation_Eiche]"
+			format = center
+			maxWidth = 25
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "Increase_Marines" 
+			position = {x=210 y=145}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_MARINES_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Decrease_Marines" 
+			position = {x=185 y=145}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_MARINES_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Eiche_Marines1"
+			position = {x=295 y= 330}	
+			spriteType = "GFX_Eiche_Marines"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "Eiche_Marines2"
+			position = {x=225 y= 360}	
+			spriteType = "GFX_Eiche_Marines"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "Eiche_Marines3"
+			position = {x=160 y= 330}	
+			spriteType = "GFX_Eiche_Marines"
+			scale = 1
+		}
+		
+		iconType = {
+			name = "Eiche_Paratroopers_Icon"
+			position = {x=120 y= 135}	
+			spriteType = "GFX_Eiche_Paratroopers_Icon"
+			scale = 1
+		}
+		
+		instantTextBoxType = {
+			name ="Paratroopers"
+			position = { x= 100 y = 148 }
+			font = "hoi4_typewriter16"
+			text = "[?ROOT.paratroopers_eiche@ROOT.show_Operation_Eiche]"
+			format = center
+			maxWidth = 25
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "Increase_Paratroopers" 
+			position = {x=70 y=145}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_PARATROOPERS_TOOLTIP"
+			scale = 0.8
+		}
+		
+		buttonType = {
+			name = "Decrease_Paratroopers" 
+			position = {x=45 y=145}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_PARATROOPERS_TOOLTIP"
+			scale = 0.8
+		}
+
+		buttonType = {
+			name = "Eiche_Paratroopers1"
+			position = {x=195 y= 180}	
+			spriteType = "GFX_Eiche_Paratroopers"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "Eiche_Paratroopers2"
+			position = {x=130 y= 220}	
+			spriteType = "GFX_Eiche_Paratroopers"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "Eiche_Paratroopers3"
+			position = {x=60 y= 260}	
+			spriteType = "GFX_Eiche_Paratroopers"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "arrowrightleft"
+			position = {x=190 y= 260}	
+			spriteType = "GFX_arrowrightleft"
+			scale = 0.5
+		}
+		
+		buttonType = {
+			name = "arrowdown"
+			position = {x=300 y= 260}	
+			spriteType = "GFX_arrowdown"
+			scale = 0.5
+		}
+		
+		buttonType = {
+			name = "arrowcenter"
+			position = {x=250 y= 260}	
+			spriteType = "GFX_arrowcenter"
+			scale = 0.6
+		}
+		buttonType = {
+			name = "arrowpara1"
+			position = {x=230 y= 220}	
+			spriteType = "GFX_arrowpara"
+			scale = 0.4
+		}
+		
+		buttonType = {
+			name = "arrowpara2"
+			position = {x=165 y= 260}	
+			spriteType = "GFX_arrowpara"
+			scale = 0.4
+		}
+		
+		buttonType = {
+			name = "arrowpara3"
+			position = {x=95 y= 300}	
+			spriteType = "GFX_arrowpara"
+			scale = 0.4
+		}
+
+
+		buttonType = {
+			name = "Eiche_Initiate"
+			position = {x=150 y= 555}	
+			spriteType = "GFX_mission_confirmation_ok"
+			pdx_tooltip = "INITIATE_EICHE"
+			scale = 1
+		}
+		
+		buttonType = {
+			name = "Eiche_Cancel"
+			position = {x=50 y= 555}	
+			spriteType = "GFX_mission_confirmation_ok"
+			pdx_tooltip = "EICHE_CANCEL_TOOLTIP"
+			scale = 1
+		}
+		
+		instantTextBoxType = {  
+			name ="Eiche Success Chance"
+			position = { x= 258 y = 560 }
+			font = "hoi_18mbs"
+			text = "Базовий шанс на успіх:"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		iconType ={
+			name ="Eiche_chance_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=420 y=557}
+		}
+		
+		instantTextBoxType = {
+			name ="Eiche Success Chance value"
+			position = { x= 405 y = 560 }
+			font = "hoi_18mbs"
+			text = "[?ROOT.eiche_success_chance@ROOT.show_Operation_Eiche]%"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "EICHE_CHANCE_TOOLTIP"
+		}
+		
+		instantTextBoxType = {
+			name ="Initiate Eich"
+			position = { x= 173 y = 560 }
+			font = "hoi_18mbs"
+			text = "Почати"
+			format = left
+			maxWidth = 250
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "INITIATE_EICHE"
+		}
+		
+		instantTextBoxType = {
+			name ="Cancel Eich"
+			position = { x= 61 y = 560 }
+			font = "hoi_18mbs"
+			text = "Скасувати"
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="Eich Title"
+			position = { x= 30 y = 90 }
+			font = "hoi_18mbs"
+			text = "Сплянуйте цю операцію, щоб врятувати наших шпигунів"
+			format = left
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		}
+		
+		
+		
+		containerWindowType = {
+		name = "enemy_state_resistance_container"
+		position = { x = 4 y = -134 } 
+	    size = { width=1000 height=1000 }
+		
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = no
+		
+		
+	
+		buttonType = {
+			name ="enemy_resistance"
+			spriteType = "GFX_enemy_resistance"
+			position = { x= 18 y = 329}
+			pdx_tooltip = "ARM_RESISTANCE_TOOLTIP"
+		}
+		
+
+		}
+		
+		containerWindowType = {
+		name = "spy_recruitment_office_container"
+		position = { x = 50 y = -107 } 
+	    size = { width=1000 height=1000 }
+		 
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = no 
+		
+	 	
+	
+		buttonType = {
+			name ="build_spy_recruitment_office"
+			spriteType = "GFX_spy_recruitment_office"
+			position = { x= 18 y = 329}
+			pdx_tooltip = "Spy_University_desc"
+			scale = 0.9
+		}
+		
+
+		}
+	
+	
+	containerWindowType = {
+		name = "enemy_state_resistance_menu_container"
+		position = { x = 700 y = -100 } #990
+	    size = { width=1000 height=1000 }
+		
+
+		fade_time = 1000
+		fade_type = linear
+		moveable = no
+		
+		background = {
+			name = "enemy_state_resistance_menu_bg"
+			spriteType = "GFX_mission_confirmation_bg"
+		}
+        
+		buttonType = {
+			name ="Send"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 270 y = 258}
+			
+		}
+		
+	
+		buttonType = {
+			name ="Send_Infrastructure"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 270 y = 258}
+			pdx_tooltip = "SEND_EXP_TOOLTIP"
+		}
+		
+		buttonType = {
+			name ="Send_Airbase"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 270 y = 258}
+			pdx_tooltip = "SEND_EXP_TOOLTIP"
+		}
+		
+		buttonType = {
+			name ="Send_Radar"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 270 y = 258}
+			pdx_tooltip = "SEND_EXP_TOOLTIP"
+		}
+		
+		instantTextBoxType = {
+			name ="Mission_Confirmation_Header"
+			position = { x= 18 y = 31 }
+			font = "hoi_20b"
+			text = "Озброїти супротив у реґіоні [From.GetName]"
+			format = center
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+
+		}
+		
+		iconType = {
+			name = "resistance_icon" 
+			position = {x=280 y=100}	
+			spriteType = "GFX_resistance_icon"
+			
+		}
+		
+		
+		instantTextBoxType = {
+			name ="Current Resistance Strength"
+			position = { x= 40 y = 104 }
+			font = "hoi_20b"
+			text = "Поточна сила супротиву: [?ROOT.resistance_percentage@PREV]%"
+			format = left
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="Send Equipment"
+			position = { x= 40 y = 205 }
+			font = "hoi_20b"
+			text = "Відправити додатк. оснащ:"
+			format = left
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name ="Select Target"
+			position = { x= 40 y = 153 }
+			font = "hoi_20b"
+			text = "Виберіть ціль операції: [?ROOT.test_test]"
+			format = left
+			maxWidth = 500
+			maxHeight = 24
+			fixedsize = yes
+		}
+		
+		
+		iconType ={
+			name ="equipement_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=314 y=205 }
+		}
+		
+		
+		
+		buttonType = {
+			name = "Increase_equipment" 
+			position = {x=275 y=201}	
+			spriteType = "GFX_naval_increase_amount"
+			pdx_tooltip = "INCREASE_ARM_RESISTANCE_TOOLTIP"
+		}
+		
+		
+		buttonType = {
+			name = "Decrease_equipment" 
+			position = {x=243 y=201}	
+			spriteType = "GFX_naval_decrease_amount"
+			pdx_tooltip = "DECREASE_ARM_RESISTANCE_TOOLTIP"
+			
+		}
+		
+		
+	
+		iconType = {
+			name = "resistance_equipment" 
+			position = {x=400 y=200}	
+			spriteType = "GFX_resistance_equipment"
+			scale = 0.7
+		}
+		buttonType = {
+			name = "Espionage_Infrastructure" 
+			position = {x=275 y=140}	
+			spriteType = "GFX_espionage_infrastructure"
+		}
+		
+		buttonType = {
+			name = "Espionage_Infrastructure_ON_ON" 
+			position = {x=275 y=140}	
+			spriteType = "GFX_espionage_infrastructure_ON_ON"
+		}
+		
+
+		buttonType = {
+			name = "Espionage_Radar" 
+			position = {x=330 y=140}	
+			spriteType = "GFX_espionage_radar"
+		}
+		
+		buttonType = {
+			name = "Espionage_Radar_ON_ON" 
+			position = {x=330 y=140}	
+			spriteType = "GFX_espionage_infrastructure_ON_ON"
+		}
+		
+		buttonType = {
+			name = "Espionage_Airbase" 
+			position = {x=385 y=140}	
+			spriteType = "GFX_espionage_airbase"
+		}
+		
+		buttonType = {
+			name = "Espionage_Airbase_ON_ON" 
+			position = {x=385 y=140}	
+			spriteType = "GFX_espionage_infrastructure_ON_ON"
+		}
+		
+
+		
+		instantTextBoxType = {
+			name ="Equipment txt"
+			position = { x= 323 y = 208 }
+			font = "hoi_18mbs"
+			text = "[?ROOT.resistance_equipment@PREV]"
+			format = center
+			maxWidth = 50
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+
+		instantTextBoxType = {
+			name ="Send txt"
+			position = { x= 286 y = 264 }
+			font = "hoi_18mbs"
+			text = "Почати"
+			format = center
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "SEND_EXP_TOOLTIP"
+			
+		}
+		
+		buttonType = {
+			name ="Cancel"
+			spriteType = "GFX_mission_confirmation_ok"
+			position = { x= 160 y = 258}
+		}
+ 		instantTextBoxType = {
+			name ="Cancel txt"
+			position = { x= 156 y = 264 }
+			font = "hoi_18mbs"
+			text = "Скасувати"
+			format = center
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+		}
+		
+
+		}
+}

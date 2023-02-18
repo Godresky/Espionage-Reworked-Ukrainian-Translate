@@ -1,0 +1,558 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_spy"
+		texturefile = "gfx/spy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_embargoicon"
+		texturefile = "gfx/embargoicon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_TradeIncrease"
+		texturefile = "gfx/TradeIncrease.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TradeSanctions"
+		texturefile = "gfx/TradeSanctions.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_generic_spy_intel"
+		texturefile = "gfx/generic_spy_intel.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Spy_Menu_Window_bg"
+		texturefile = "gfx/Spy_Menu_Window_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Disrupt_Civilian"
+		texturefile = "gfx/Disrupt_Civilian.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_shield"
+		texturefile = "gfx/shield.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Disrupt_Military"
+		texturefile = "gfx/Disrupt_Military.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Research_Disrupt_Military"
+		texturefile = "gfx/Research_Disrupt_Military.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Research_Disrupt_Military_Highlighted"
+		texturefile = "gfx/Research_Disrupt_Military_Highlighted.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Research_Sabotage_Production"
+		texturefile = "gfx/Research_Sabotage_Production.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Sabotage_Production"
+		texturefile = "gfx/Sabotage_Production.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Sabotage_Extraction"
+		texturefile = "gfx/Sabotage_Extraction.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Research_Sabotage_Extraction"
+		texturefile = "gfx/Research_Sabotage_Extraction.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sabotage_Recruitment"
+		texturefile = "gfx/Sabotage_Recruitment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sabotage_Planning"
+		texturefile = "gfx/Sabotage_Planning.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Disrupt_Supply"
+		texturefile = "gfx/Disrupt_Supply.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Jam_Radar"
+		texturefile = "gfx/jam_radar.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Poison_Food"
+		texturefile = "gfx/Poison_Food.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Support_Resistance"
+		texturefile = "gfx/Support_Resistance.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Support_Pacifists"
+		texturefile = "gfx/Support_Pacifists.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Sabotage_Research"
+		texturefile = "gfx/Sabotage_Research.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_Spy_Leader"
+		texturefile = "gfx/Spy_Leader.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_level_button"
+		texturefile = "gfx/level_button.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_level_button_blue"
+		texturefile = "gfx/level_button_blue.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_menu_line"
+		texturefile = "gfx/menu_line.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_menu_model_bg"
+		texturefile = "gfx/menu_model_bg.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_model_progress"
+		texturefile = "gfx/model_progress.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_armor_model"
+		texturefile = "gfx/armor_model.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_fighter_model"
+		texturefile = "gfx/fighter_model.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_cas_model"
+		texturefile = "gfx/cas_model.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_paper"
+		texturefile = "gfx/paper.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_spy_encryption"
+		texturefile = "gfx/spy_encryption.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_spy_decryption"
+		texturefile = "gfx/spy_decryption.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_spy_priority_bg"
+		texturefile = "gfx/spy_priority_bg.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_bg_button"
+		texturefile = "gfx/bg_button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Sow_Political_Discontent"
+		texturefile = "gfx/Sow_Political_Discontent.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Infiltrate"
+		texturefile = "gfx/Infiltrate.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_Frame"
+		texturefile = "gfx/Frame.dds"
+		legacy_lazy_load = no
+	}
+	
+
+	
+		spriteType = {
+		name = "GFX_copy_model"
+		texturefile = "gfx/copy_model.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_light_armor_model"
+		texturefile = "gfx/light_armor_model.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_heavy_armor_model"
+		texturefile = "gfx/heavy_armor_model.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_strategic_bomber_model"
+		texturefile = "gfx/strategic_bomber_model.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_research_points"
+		texturefile = "gfx/research_points.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_cloning_progress_bg"
+		texturefile = "gfx/cloning_progress_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_cloning_progress_bg_10"
+		texturefile = "gfx/cloning_progress_bg_10.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_mission_confirmation_bg"
+		texturefile = "gfx/mission_confirmation_bg.dds"
+		legacy_lazy_load = no
+	}
+	
+   	spriteType = {
+		name = "GFX_mission_confirmation_ok"
+		texturefile = "gfx/mission_confirmation_ok.dds"
+		legacy_lazy_load = no
+	}
+	
+	   	spriteType = {
+		name = "GFX_spy_captured_event"
+		texturefile = "gfx/spy_captured_event.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_enemy_resistance"
+		texturefile = "gfx/enemy_resistance.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_resistance_equipment"
+		texturefile = "gfx/resistance_equipment.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_resistance_icon"
+		texturefile = "gfx/resistance_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_infrastructure"
+		texturefile = "gfx/espionage_infrastructure.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_infrastructure_ON"
+		texturefile = "gfx/espionage_infrastructure_ON.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_airbase"
+		texturefile = "gfx/espionage_airbase.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_airbase_ON"
+		texturefile = "gfx/espionage_airbase_ON.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_radar"
+		texturefile = "gfx/espionage_radar.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_radar_ON"
+		texturefile = "gfx/espionage_radar_ON.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_espionage_infrastructure_ON_ON"
+		texturefile = "gfx/espionage_infrastructure_ON_ON.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_resistance_event"
+		texturefile = "gfx/resistance_event.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_espionage_success_event"
+		texturefile = "gfx/espionage_success_event.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_spies_arrested_event"
+		texturefile = "gfx/spies_arrested_event.dds"
+		legacy_lazy_load = no
+	}
+    spriteType = {
+		name = "GFX_spy_xp"
+		texturefile = "gfx/spy_xp.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_infiltration_event"
+		texturefile = "gfx/infiltration_event.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_ghost_signal"
+		texturefile = "gfx/ghost_signal_event.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_espionage_investigation_event"
+		texturefile = "gfx/espionage_investigation_event.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_stability_espionage"
+		texturefile = "gfx/stability_espionage.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_decryption_espionage"
+		texturefile = "gfx/decryption_espionage.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_cancel_infiltration"
+		texturefile = "gfx/cancel_infiltration.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_Prisoners"
+		texturefile = "gfx/Prisoners.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Negotiate_Release_Bg"
+		texturefile = "gfx/Negotiate_Release_Bg.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_Operation_Map_bg"
+		texturefile = "gfx/operation_map_bg.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_Eiche_Transport"
+		texturefile = "gfx/Eiche_Transport.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Eiche_Convoy"
+		texturefile = "gfx/Eiche_Convoy.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Eiche_Paratroopers"
+		texturefile = "gfx/Eiche_Paratroopers.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Eiche_Paratroopers_Icon"
+		texturefile = "gfx/Eiche_Paratroopers_Icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Eiche_Marines"
+		texturefile = "gfx/Eiche_Marines.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Eiche_Marines_Icon"
+		texturefile = "gfx/Eiche_Marines_Icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Espionage_Box"
+		texturefile = "gfx/Espionage_Box.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Negotiate_Release_Button"
+		texturefile = "gfx/Negotiate_Release_Button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Operation_Eiche_Button"
+		texturefile = "gfx/Operation_Eiche_Button.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_Counter_Espionage_Button"
+		texturefile = "gfx/Counter_Espionage_Button.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Letter_Espionage"
+		texturefile = "gfx/Letter_Espionage.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_Signature"
+		texturefile = "gfx/Signature.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_suspicious_activity_event"
+		texturefile = "gfx/suspicious_activity_event.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_spies_captured"
+		texturefile = "gfx/spies_captured.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_open_fire"
+		texturefile = "gfx/open_fire.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_arrowrightleft"
+		texturefile = "gfx/arrowrightleft.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_arrowdown"
+		texturefile = "gfx/arrowdown.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_arrowcenter"
+		texturefile = "gfx/arrowcenter.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_arrowpara"
+		texturefile = "gfx/arrowpara.dds"
+		legacy_lazy_load = no
+	}
+	
+		frameAnimatedSpriteType = {
+		name = "GFX_ongoing_counter_intelligence"
+		texturefile = "gfx/interface/ongoing_counter_intelligence.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+		spriteType = {
+		name = "GFX_spies_arrested_event_large"
+		texturefile = "gfx/spies_arrested_event_large.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_network_strength"
+		texturefile = "gfx/network_strength.dds"
+		legacy_lazy_load = no
+	}
+	
+	    spriteType = {
+		name = "GFX_spy_recruitment_office"
+		texturefile = "gfx/spy_recruitment_office.dds"
+		legacy_lazy_load = no
+	}
+	
+		spriteType = {
+		name = "GFX_operation_eiche"
+		texturefile = "gfx/operation_eiche.dds"
+		legacy_lazy_load = no
+	}
+}
+
+
+
