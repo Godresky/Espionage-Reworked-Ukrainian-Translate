@@ -1,6 +1,7 @@
 ﻿l_ukrainian:
 
 
+
 supply_disrupted: "Постачання перервано"
 Decryption_Focus: "Очільник агентства сфокусований на розшифруванні"
 Encryption_Focus: "Очільник агентства сфокусований на зашифруванні"
@@ -109,6 +110,7 @@ SPIES_TOOLTIP: "У вас є доступних: [?spies_display] £spy.\n\nВи
  espionage.news.335.t: "Ми відбили иноземну спецоперацію!"
  espionage.news.335.desc: "Иноземні шпигуни намагалися здійснити таємну місію на нашій території. Але завдяки нашому поточному захисту, ми розкрили змову й заарештували усіх причетних до неї шпигунів для допиту. Схоже, що вони перебували під командуванням [From.GetAdjective]ої таємної служби."
  espionage.news.335.a: "[From.GetName] заплатить за це!"
+
 
  espionage.news.336.t: "Операція пройшла успішно у державі [From.GetName]!"
  espionage.news.336.desc: "Наші шпигуни успішно проникли в країну [From.GetName] й виконала таємну місію, про яку ви їм сказали. Ворог не знає, хто стоїть за цією атакою, завдяки нашій високій шпигунській ефективности."
@@ -385,9 +387,9 @@ LOCKDOWN_TOOLTIP: "Це збільшить наші шанси захопити 
 TARGETS_MAXED: "Додати §H100§! £spy до нашої мережі у державі §H[From.GetNameWithFlag]§!.\n\nНаразі у нас §R[?ROOT.networks_used]/5§! мереж, побудованих в інших країнах. Якщо ми досягнемо обмеження у 5, нам слід відкликати шпигунів з одної з держав, перед тим, як створити ному мережу закордоном.\n\nНаразі у нас мережі розгорнуті в наступних країнах:\n[?ROOT.network1_target.GetNameWithFlag]\n[?ROOT.network2_target.GetNameWithFlag]\n[?ROOT.network3_target.GetNameWithFlag]\n[?ROOT.network4_target.GetNameWithFlag]\n[?ROOT.network5_target.GetNameWithFlag]"
 DECREASE_NETWORK: "[Being_Disrupted]Відкликати §H100§! £spy з держави §H[From.GetNameWithFlag]§!" 
 INCREASE_TRANSPORT_TOOLTIP: "Призначити §H5§! транспортних літаків до цієї операції.\n\nМи наразі маємо спійманих §H[?ROOT.show_Operation_Eiche:Spies_Captured@ROOT]§! £spy у державі §H[?ROOT.show_Operation_Eiche.GetName]§! та §H[?ROOT.paratroopers_eiche@ROOT.show_Operation_Eiche]§! десантників, призначених до цієї місії.\n\nЗагалом нам потрібно щонайменше §H[?ROOT.transport_needed@ROOT.show_Operation_Eiche]§! літаків для перевезення наших десантників та врятованих шпигунів."
-DECREASE_TRANSPORT_TOOLTIP: "Відкликати §H5§! транспортних літаків від цієї операції.\n\nМи наразі маємо спійманих §H[?ROOT.show_Operation_Eiche:Spies_Captured@ROOT]§! £spy у державі §H[?ROOT.show_Operation_Eiche.GetName]§! та §H[?ROOT.paratroopers_eiche@ROOT.show_Operation_Eiche]§! десантників, призначених до цієї місії.\n\nЗагалом нам потрібно щонайменше §H[?ROOT.transport_needed@ROOT.show_Operation_Eiche]§! літаків для перевезення наших десантників та врятованих шпигунів."
 SPIES_CAPTURED: "Кількість наших спійманих £spy у державі §H[Prev.GetNameWithFlag]§!: §H[?PREV.Spies_Captured@ROOT]§!"
 EICHE_CHANCE_TOOLTIP: "Наш шанс на успіх розраховуються так:\n(§HСпіймані £spy §! ÷ -5) ÷ (§H[Root.GetAdjective]а§! агентська ефективність ÷ §H[?ROOT.show_Operation_Eiche.GetAdjective]а§! агентська ефективність)\n\nДо цього значення додаються такі чинники:\nПризначені десантники: §G[?ROOT.paratroopers_bonus@ROOT.show_Operation_Eiche]§!\nПризначені морпіхи: §G[?ROOT.marines_bonus@ROOT.show_Operation_Eiche]§!\nШтраф за відсутність транспорту: §R[?ROOT.transport_penalty@ROOT.show_Operation_Eiche]§!\nШтраф за відсутність конвоїв: §R[?ROOT.convoy_penalty@ROOT.show_Operation_Eiche]§!\n\nЦе значення не є остаточним і може бути зменшене або збільшене протягом ланцюжка подій, що йдуть за початком цієї операції."
+DECREASE_TRANSPORT_TOOLTIP: "Відкликати §H5§! транспортних літаків від цієї операції.\n\nМи наразі маємо спійманих §H[?ROOT.show_Operation_Eiche:Spies_Captured@ROOT]§! £spy у державі §H[?ROOT.show_Operation_Eiche.GetName]§! та §H[?ROOT.paratroopers_eiche@ROOT.show_Operation_Eiche]§! десантників, призначених до цієї місії.\n\nЗагалом нам потрібно щонайменше §H[?ROOT.transport_needed@ROOT.show_Operation_Eiche]§! літаків для перевезення наших десантників та врятованих шпигунів."
 INCREASE_CONVOY_TOOLTIP: "Призначити §H5§! конвоїв до цієї операції.\n\nМи наразі маємо §H[?ROOT.marines_eiche@ROOT.show_Operation_Eiche]§! морпіхів, призначених до цієї місії. Нам потрібно §H[?ROOT.convoy_needed@ROOT.show_Operation_Eiche]§! конвоїв для їхнього перевезення."
 DECREASE_CONVOY_TOOLTIP: "Відкликати §H5§! конвоїв від цієї операції.\n\nМи наразі маємо §H[?ROOT.marines_eiche@ROOT.show_Operation_Eiche]§! морпіхів, призначених до цієї місії. Нам потрібно §H[?ROOT.convoy_needed@ROOT.show_Operation_Eiche]§! конвоїв для їхнього перевезення."
 INCREASE_PARATROOPERS_TOOLTIP: "Призначити §H1§! десантника до цієї операції.\n\nНам потрібно §H3000§! піхотного спорядження, §H1000§! додаткового оснащення та §H10,000§! людського ресурсу, щоб створити дивізію. Нам також потрібно дослідити технологію «Повітряний десант I»."
@@ -398,9 +400,6 @@ Recent_Attempt: "§RЦя держава вже була об'єктом спро
 Being_Disrupted: "§RМи не можемо розпустити нашу мережу у цій державі, доки не закінчиться результати наших нещодавних таємних місій проти них.§!\n"
 
 INITIATE_EICHE: "Розпочати операцію «Айхе» (повинна мати шанси на успіх)."
-
-CANCEL_OPERATION: "Операція буде скасована!"
-DELAY_OPERATION: "Операція буде затримана!"
 
 
 Counter_Espionage_Non_Active: "Призначити шпигунську мережу для проведення контроперації у державі §H[From.GetNameWithFlag]§!, що зменшить шанс успіху їхніх таємних місій проти нас на §G15%§!.\n\n§RВи не зможете виконувати інші таємні місії, поки це завдання активне§!" 
@@ -413,7 +412,7 @@ ENG_Target_name: "[ENG_Target.GetName]"
 FRA_Target_name: "[FRA_Target.GetName]"
 TUR_Target_name: "[TUR_Target.GetName]"
 USA_Target_name: "[USA_Target.GetName]"
- JAP_Target_name: "[JAP_Target.GetName]"
+JAP_Target_name: "[JAP_Target.GetName]"
 ITA_Target_name: "[ITA_Target.GetName]"
 SOV_Target_name: "[SOV_Target.GetName]"
 Target1_name: "[target1.GetName]"
@@ -452,3 +451,6 @@ Operation_Pacifists: "§RПідтримати пацифістів§!"
 Operation_Research: "§RСаботаж досліджень§!"
 Operation_Discontent: "§RСіяння політичного невдоволення§!"
 Operation_Infiltration: "§RПроникнення§!"
+
+CANCEL_OPERATION: "Операція буде скасована!"
+DELAY_OPERATION: "Операція буде затримана!"
